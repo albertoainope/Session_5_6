@@ -1,0 +1,14 @@
+import random
+lives = 3
+
+while lives:
+    print(f"You have {lives} lives left")
+    dice_roll = random.randint(1,6)
+    if dice_roll == 6:
+        print("You rolled a 6, you win")
+        break
+    print(f"You rolled a {dice_roll}, please try again")
+    lives -= 1
+
+else:
+    print("Game over, you have no lives left")
